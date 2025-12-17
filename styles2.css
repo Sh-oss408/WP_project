@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> Kitchen Buddy</title>
+<link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+<header>
+  <div class="header">
+    <h1>🍳 Kitchen Buddy</h1>
+    <button id="openModal">➕ Add Tip</button>
+  </div>
+</header>
+
+<div class="search">
+  <input id="search" placeholder="Search tips...">
+  <div id="filters">
+    <button data-cat="all" class="active">All</button>
+    <button data-cat="leftover">Leftover</button>
+    <button data-cat="cooking">Cooking</button>
+    <button data-cat="microwave">Microwave</button>
+    <button data-cat="hack">Hacks</button>
+  </div>
+</div>
+
+<h2>📝 Cooking Tips</h2>
+<div id="tips"></div>
+<p id="empty">No tips found</p>
+
+<h2>✨ Recipe Inspiration</h2>
+<p id="loading">Loading recipes...</p>
+<div id="recipes"></div>
+
+<div id="modal">
+  <div class="box">
+    <h3>Add Tip</h3>
+    <input id="title" placeholder="Title">
+    <select id="category">
+      <option value="leftover">Leftover</option>
+      <option value="cooking">Cooking</option>
+      <option value="microwave">Microwave</option>
+      <option value="hack">Hack</option>
+    </select>
+    <textarea id="desc" placeholder="Description (min 20 chars)"></textarea>
+    <button id="save">Save</button>
+    <button id="close">Cancel</button>
+    <p id="error"></p>
+  </div>
+</div>
+<a href = "index.html" target="_blank"> index 1 page</a>
+<script src="script2.js"></script>
+</body>
+</html>
